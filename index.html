@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/4a8c5ca0e5.js" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Material Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>FINAL TEST</title>
+
+    <style>
+        header{
+            background: url(images/a5.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+        .section{
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        .footer{
+            position:fixed;
+            bottom:0;
+            left:0;
+            width:100%;
+            height: 90px;
+            background-color: #D0DAEE;
+        }
+        @media screen and (max-width: 670px){
+            header{
+                min-height: 500px;
+            }
+        }
+    </style>          
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+            <a href="index.html"><img src="images/logo.png" alt="" style="height: 60px; width: 400px;"></a>
+ 
+            <a href="" class="sidenav-trigger" data-target="sidenav1">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home" class="link black-text text-darken-3" style="font-size: 20px;">Home</a></li>
+                <li><a href="#abouts" class="link black-text text-darken-3" style="font-size: 20px;">About</a></li>
+                <li><a href="#contacts" class="link black-text text-darken-3" style="font-size: 20px;">Contact</a></li>
+                <li><a class="waves-effect btn modal-trigger black-text transparent" href="#modal1">Login</a></li>
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                      <h4 class="black-text">Login</h4>
+                     <div class="col s6 l4">
+                        <form class="">
+                      <div class="row">
+                         <div class="input-field col s12 l4">
+                          <input id="Email" type="email" class="validate">
+                          <label for="Email">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                          <input id="Password" type="password" class="validate">
+                          <label for="Password">Password</label>
+                        </div>
+                         <div class="input-field col s12">
+                          <button type="submit" class="waves-effect waves-light btn">Login</button>
+                        </div>
+                        <div class="input-field col s12">
+                            <a href="#" class="light-blue-text">Forgot Password?</a>
+                        </div>        
+                        
+                      </div>	
+                      </form>
+                     </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                    </div>
+                  </div> 
+                <li><a href="#" class="tooltipped btn-floating btn-small red lighten-3" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small red lighten-3" data-tooltip="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a></li>
+                <li><a href="#" class="tooltipped btn-floating btn-small red lighten-3" data-tooltip="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a></li>
+            </ul>
+            <ul class="sidenav grey lighten-2" id="sidenav1">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#abouts">About</a></li>
+                <li><a href="#contacts">Donate</a></li>
+                <li><a class="waves-effect btn modal-trigger black-text transparent" href="#modal1">Login</a></li></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Photo grid-->
+    <section class="container section scrollspy" id="home">
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="images/ad.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1"> 
+                <h2 class="indigo-text text-darken-4">Adopt Pets</h2>
+                <h5>Adopting a pet is a wonderful and fulfilling experience. When you adopt a pet, you're giving them a second chance at life and providing them with a loving home. Pets can bring so much joy, companionship, and unconditional love into your life.</h5>
+                <a class="btn-floating btn-large pulse">Adopt Now<i class="material-icons">button</i></a>
+                <br>
+                <p></p>
+            </div>  
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="images/d1.jpg" alt="" class="responsive-img materialboxed" style="width:600px;height:300px;">
+            </div>
+            <div class="col s12 l6 pull-l5 right-align offset-l1"> 
+                <h2 class="indigo-text text-darken-4">Donations</h2>
+                <h5>Donations to support pets are incredibly valuable and have a profound impact on their well-being. By contributing funds, supplies, or your time, you can help provide crucial resources for shelters, rescue organizations, and animal welfare initiatives. These donations enable the care and treatment of homeless, abandoned, or abused animals, ensuring they receive proper medical attention, nutritious food, and a safe shelter.</h5>
+                <a class="btn-floating btn-large pulse">Donate<i class="material-icons">button</i></a>
+            </div>  
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="images/cd.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1"> 
+                <h2 class="indigo-text text-darken-4">Cats & Dogs</h2>
+                <h5>In our facility, we primarily have cats and dogs available for adoption. These lovable animals are looking for forever homes where they can receive the love, care, and attention they deserve. Cats and dogs make fantastic companions, providing unconditional love, loyalty, and endless joy. By adopting a cat or dog from our facility, you have the opportunity to bring happiness into your home while giving a second chance to an animal in need. Our dedicated staff ensures that all our cats and dogs are well-cared for, properly vaccinated, and ready to become cherished members of their new families.</h5>
+            </div>  
+        </div>
+    </section>
+
+    <!--Parallax-->
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/a2.jpg"></div>
+    </div>
+
+    <!--serv/tabs-->
+    <section class="container section scrollspy" id="abouts">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">About Us</h2>
+                <h5>At FurHome, we are passionate about pet adoptions and committed to making a difference in the lives of animals. Our organization is dedicated to providing a safe haven for homeless, abandoned, and neglected pets, and finding them loving forever homes. We believe that every animal deserves a second chance and a place to call their own.</h5>
+                <br>
+                <h5>Our team of compassionate staff and volunteers work tirelessly to rescue, rehabilitate, and care for animals in need. We provide them with medical attention, nutritious food, and a nurturing environment while they await their forever families. Through our thorough adoption process, we strive to match each pet with the perfect home, considering factors such as compatibility, lifestyle, and individual needs.</h5>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#adopt" class="indigo-text text-darken-4">ADOPT</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#donate" class="indigo-text text-darken-4">DONATE</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="adopt">
+                    <p class="flow-text indigo-text text-darken-4">ADOPT</p>
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                          <span class="card-title black-text">Terms & Conditions</span>
+                          <h6>When adopting a pet, there are typically terms and conditions in place to ensure the welfare and appropriate care of the animal. These may include requirements such as completing an adoption application, paying an adoption fee, and providing a safe and suitable home environment for the pet. Age restrictions and identification proof may be necessary, and signing an adoption contract is usually required. The contract outlines the responsibilities of the adopter, including providing proper care, regular veterinary check-ups, and committing to the well-being of the pet. These terms and conditions are in place to ensure a successful and fulfilling adoption experience for both the adopter and the pet..</h6>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">Know More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col s12" id="donate">
+                    <p class="flow-text indigo-text text-darken-4">DONATE</p>
+                    <div class="card blue-grey darken-1">
+                        <div class="card-content white-text">
+                          <span class="card-title black-text">Donations</span>
+                          <h6>Donations are acts of giving that have the power to create positive change and make a difference in the lives of others. Whether it's through monetary contributions, goods, or services, donations serve as a gesture of compassion and support. They can help provide essential resources, aid in times of crisis, support research and development, and contribute to the advancement of various causes. Donations can range from individual acts of kindness to collective efforts of philanthropy. Regardless of the form or size of the donation, each contribution has the potential to bring about meaningful impact and improve the lives of individuals, communities, and the world at large. By giving selflessly, we can come together and create a brighter future for those in need.</h6>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">Donate Now</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/a7.jpg"></div>
+    </div>
+
+    <!--contact-->
+    <section class="container section scrollspy" id="contacts">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Your Feedbacks & Concerns are Important to Us</h2>
+                <h5>We encourage you to reach out to us with any questions, concerns, or feedback you may have. Your satisfaction and engagement are important to us, and we are here to assist you in any way we can. To get in touch with us, you can simply click on the "Contact Us" link located in the menu or footer of our website. Our dedicated team of customer support professionals is ready to listen, respond, and provide the information you need. Whether you prefer email, phone, or an online contact form, we offer various communication channels to accommodate your preference. We value your input and look forward to hearing from you. Don't hesitate to contact us – we're here to help!</h5>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea""></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">calendar</i>
+                        <input type="text" id="date" class="datepicker">
+                        <label for ="date">Schedule Appointment</label>
+                    </div>
+                    <div class="input-field">
+                        <p>Your Concern</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>About Adoptation</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>About Donations</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                          </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>Partnership</h5>
+                    <ul>
+                        <li>
+                          <img src="images/gcash.jpg" style="height: 80px; width: 100px;">
+                        </li>
+                        <li>
+                          <img src="images/pay.jpg" style="height: 80px; width: 100px;">
+                        </li>
+                        <li>
+                          <img src="images/ub.jpg" style="height: 80px; width: 100px;">
+                        </li>
+                      </ul>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Social Media Accounts</h5>
+                    <li><a href="#" class="tooltipped btn-floating btn-small indigo lighten-3" data-tooltip="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        </a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small indigo lighten-3" data-tooltip="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a></li>
+                        <li><a href="#" class="tooltipped btn-floating btn-small indigo lighten-3" data-tooltip="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a></li>
+                    <ul>
+                        <li><h4><a href="" class="green-text text-lighten-3">Terms of Use</h4></a></li>
+                        <li><h4><a href="" class="green-text text-lighten-3">Privacy Policy</h4></a></li>
+                        <li><h4><a href="" class="green-text text-lighten-3">Sitemap</h4></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2023 FurrHome</div>
+        </div>
+    </footer>
+
+
+         <!-- JQuery CDN -->
+         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+         <!-- Compiled and minified JavaScript -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+         <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.materialboxed').materialbox();
+                $('.parallax').parallax();
+                $('.tabs').tabs();
+                $('.datepicker').datepicker({
+                    disableWeekends: true
+                });
+                $('.tooltipped').tooltip();
+                $('.scrollspy').scrollSpy();
+                $('.modal').modal();
+            });
+         </script>
+</body>
+</html>
